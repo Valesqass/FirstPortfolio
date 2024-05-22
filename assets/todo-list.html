@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./css/to_do.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="task-input">
+            <img src="/assets/img/bars-icon.svg" alt="">
+            <input type="text" placeholder="Ajouter une tâche">
+        </div>
+
+        <div class="controls">
+            <div class="filters">
+                <span id="all" class="active">
+                    Tâches
+                </span>
+                <span id="pending">En</span>
+                <span id="completed">Attente</span>
+            </div>
+            <button class="clear-btn">Effacer tout</button>
+        </div>
+        <ul class="task-box"></ul>
+
+    </div>
+
+    <script src="./js/to-do.js"></script>
+</body>
+
+</html>

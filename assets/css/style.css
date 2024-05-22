@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+}
+
+                                                    /* NAVABAR */
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.nav-logo{
+    max-width: 0px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.content a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+
+.btn a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.btn a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.3s ease;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 5.75rem;
+}
+
+.btn:hover{
+    background-color: #1e40af;
+}
+
+
+
+                                                   /* PAGE D'ACCUEIL */
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px  solid #4c4c4c ;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #5676d7;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .image{
+    position: relative;
+}
+
+header .image::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #1d4ed8;
+    opacity: 0.2;
+    z-index: -100;
+}
+
+header .image img{
+    max-width: 600px;
+    margin: auto;
+}
+
+
+                                                       /* ABOUT ME */
+.about{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top: 4%;
+    align-items: center;
+    border-bottom: 1px  solid #4c4c4c ;
+    padding-bottom: 8%;
+}
+
+
+.me{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about img{
+    width: 300px;
+    border-radius: 20%;
+}
+
+.about p{
+    color: rgb(194, 184, 184);
+    font-size: 1.12rem;
+    text-align: center;
+}
+
+                                                        /* Mes projets */
+
+
+
+section .header{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.features{
+    margin-top: 4rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 3fr);
+    max-width: 1600px;
+}
+
+.features .card{
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    
+}
+
+.features .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.features .card i{
+    display: inline-block;
+    color: rgb(245, 222, 179);
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    box-shadow: 3px 5px 5px rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+
+.features .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+
+.features .card p{
+    color: #ccc;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.features .card a{
+    color: #fff;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.features .card a:hover{
+    color: #708be3;
+}
+
+
+
+
+                                           /* Mes compétences */
+
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+}
+
+.header-comp {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+
+.pricing{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.pricing .card{
+    padding: 3rem 2rem;
+    background-color: #27272a;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.pricing .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4{
+    margin-bottom: 1.50rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pricing .card h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.pricing .card button:hover{
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+                                                /* Rencontrons nous */
+
+
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3.15rem;
+}
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.contact form{
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.input-box .input-field{
+    width: 48.5%;
+}
+
+
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 1px solid #1d4ed8;
+    outline: none;
+    border-radius: 6px;
+    color: #ededee;
+    margin: 12px 0;    
+}
+
+.field .item::placeholder{
+    color: #ccc;
+}
+
+.field.error .item{
+    border-color: red;
+}
+
+.field.error .error-txt{
+    display: block;
+}
+
+
+form .textarea-field .error-txt{
+    margin-top: -10px;     
+}
+
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form button{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+form button:hover{
+    background-color: #193697;
+}
+
+
+.field .error-txt{
+    font-size: 14.5px;
+    color: #d70000;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+
+
+
+
+
+                                           /* footer */
+
+footer{
+    margin-top: 4rem;
+}
+
+footer .column .logo{
+    max-width: 100px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .column p{
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+footer .column .socials a{
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 4px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover{
+    color: #fff;
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+ .scrollTop{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 13rem;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #c1c1c1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+.scrollTop:hover{
+    background-color: #18181B;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (width < 900px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    .nav-links{
+        display: none;
+    }
+    header p{                                                                                                       
+        text-align: center;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .btn{
+        justify-content: center;
+        align-items: center;
+        margin-left: 30.95%;
+    }
+    .content h1{
+        overflow-y: hidden;
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+        overflow-y: hidden;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about img{
+        margin: auto;
+    }
+    .about p{
+        text-align: center;
+        margin: auto;
+    }
+    .about p .supprime{
+        display: none;
+        }
+        
+
+    .features{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pricing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 600px){
+    *{
+        padding: auto;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    header .image::before{
+        display: none;
+    }
+    .btn{
+        justify-content: center;
+        align-items: center;
+        margin-left: 23%;
+    }
+    .content h1{
+        overflow-y: hidden;
+    }
+    header p{
+        text-align: center;
+    }
+    .about{
+        display: grid;
+    }
+    .me{
+        text-align: center;
+        margin-left: 13px;
+    }
+    .about img{
+        margin: auto;
+        padding-right: 2rem;
+    }
+    .about p{
+        text-align: center;
+        font-size: 0.90rem;
+    }
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer{
+        grid-template-columns: 1fr 150px;
+        margin: auto;
+    }
+
+    footer .column .socials{
+        margin-top: 30px;
+    }
+
+    .scrollTop{
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
